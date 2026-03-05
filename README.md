@@ -1,5 +1,5 @@
 [README.md](https://github.com/user-attachments/files/25777132/README.md)
-# COMP8090SEF Individual Project - Study Notes Processor & Smart Revision Assistant
+# COMP2090SEF Individual Project - Study Notes Processor & Smart Revision Assistant
 
 **Task 1: OOP-based Application Development**  
 **GitHub Repository**: [https://github.com/hello2345de/COMP8090SEF-StudyNotesAssistant](https://github.com/hello2345de/COMP8090SEF-StudyNotesAssistant)
@@ -16,7 +16,7 @@ This is a Python GUI application designed to help students process and revise le
 
 The application solves a real-life problem: students often struggle with scattered notes, manual summarization, and creating self-test questions. This tool offers a structured, private, persistent alternative to pasting notes into external AI every time.
 
-**Current status (pre-submission 8 March 2026)**:
+**Current status **:
 - Basic OOP structure implemented
 - Tkinter GUI with tabs for adding notes and placeholders for summarize/quiz
 - Persistence, summarization, and question generation stubs ready
