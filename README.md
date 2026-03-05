@@ -34,16 +34,4 @@ The project uses **all core OOP concepts** from the course:
 
 Future additions will include dunder methods (`__str__`, `__repr__`), class/static methods, and operator overloading if needed.
 
-## Repository Structure (Task 1)
-COMP2090SEF-StudyNotesAssistant/
-├── README.md
-├── task1/
-│ ├── main.py
-│ ├── models/
-│ │ └── note.py
-│ ├── storage/
-│ │ └── repository.py
-│ ├── processing/
-│ │ ├── summarizer.py
-│ │ └── question_generator.py
-└ └── gui.py
+
