@@ -30,3 +30,12 @@ class Trie:
                 return False
             node = node.children[char]
         return True
+
+
+#Code Explanation:
+        
+#TrieNode uses a dictionary for children (flexible for any alphabet).
+#is_end_of_word flag indicates a complete word.
+#insert traverses and builds path.
+#search verifies full path + end flag.
+#starts_with checks path only (useful for autocomplete).
