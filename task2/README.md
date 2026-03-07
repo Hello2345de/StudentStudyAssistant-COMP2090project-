@@ -1,8 +1,8 @@
 # Task 2 – Self-Study on a New Data Structure and a New Algorithm
 
 **Course**: COMP2090SEF  
-**Project**: Data Structures, Algorithms and Problem Solving  
-**Semester**: 2026 Spring  
+**Topic**: Data Structures, Algorithms and Problem Solving  
+
 
 ## Selected Data Structure: Trie (Prefix Tree)
 
@@ -52,40 +52,5 @@ Tim Sort is a hybrid stable sorting algorithm that combines **insertion sort** (
 - Sorting large datasets with natural runs (logs, timestamps, partially pre-sorted data)
 - Stable sorting where order of equal elements matters (e.g., database records)
 
-## Code Examples & Explanation
 
-### Trie – Basic Implementation (conceptual)
 
-```python
-class TrieNode:
-    def __init__(self):
-        self.children = {}
-        self.is_end_of_word = False
-
-class Trie:
-    def __init__(self):
-        self.root = TrieNode()
-
-    def insert(self, word):
-        node = self.root
-        for char in word:
-            if char not in node.children:
-                node.children[char] = TrieNode()
-            node = node.children[char]
-        node.is_end_of_word = True
-
-    def search(self, word):
-        node = self.root
-        for char in word:
-            if char not in node.children:
-                return False
-            node = node.children[char]
-        return node.is_end_of_word
-
-    def starts_with(self, prefix):
-        node = self.root
-        for char in prefix:
-            if char not in node.children:
-                return False
-            node = node.children[char]
-        return True
