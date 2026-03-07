@@ -1,7 +1,6 @@
-# COMP8090SEF Individual Project - Study Notes Processor & Smart Revision Assistant
+# COMP2090SEF Individual Project - Study Notes Processor & Smart Revision Assistant
 
 **Task 1: OOP-based Application Development**  
-**GitHub Repository**: [https://github.com/hello2345de/COMP8090SEF-StudyNotesAssistant](https://github.com/hello2345de/COMP8090SEF-StudyNotesAssistant)
 
 ## Project Overview (Task 1)
 
@@ -34,16 +33,5 @@ The project uses **all core OOP concepts** from the course:
 
 Future additions will include dunder methods (`__str__`, `__repr__`), class/static methods, and operator overloading if needed.
 
-## Repository Structure (Task 1)
-COMP8090SEF-StudyNotesAssistant/
-├── README.md
-├── task1/
-│ ├── main.py
-│ ├── models/
-│ │ └── note.py
-│ ├── storage/
-│ │ └── repository.py
-│ ├── processing/
-│ │ ├── summarizer.py
-│ │ └── question_generator.py
-└ └── gui.py
+
+
