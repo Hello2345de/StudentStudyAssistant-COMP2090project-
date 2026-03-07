@@ -30,8 +30,6 @@ class Trie:
                 return False
             node = node.children[char]
         return True
-
-
 #Code Explanation:
         
 #TrieNode uses a dictionary for children (flexible for any alphabet).
