@@ -8,7 +8,8 @@ A simple, exportable desktop app built with Flet that helps students process `.t
 - Produces well-structured, exam-ready summaries with bold headings and bullet points  
 - Generates 6 high-quality practice questions that match the original style (calculation, sketch, short-answer, etc.) with full step-by-step answers  
 
-
+## .EXE direct execute (Windows only)
+download the .exe file within this folder, and execute it on a windows computer
 
 ## Module Installation (PyCharm method)
 
