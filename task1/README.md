@@ -10,6 +10,8 @@ A simple, exportable desktop app built with Flet that helps students process `.t
 
 ## .EXE direct execute (Windows only)
 download the .exe file within this folder, and execute it on a windows computer
+link to the .exe:
+https://drive.google.com/file/d/1ZSXulqw6Bjys3lelW8l77asUWsk5lYFO/view?usp=drive_link
 
 ## Module Installation (PyCharm method)
 
