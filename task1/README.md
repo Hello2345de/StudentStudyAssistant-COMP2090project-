@@ -1,37 +1,59 @@
-# COMP2090SEF Individual Project - Study Notes Processor & Smart Revision Assistant
+# Study Notes Processor
 
-**Task 1: OOP-based Application Development**  
+**Transform messy lecture notes into clean summaries and practice quizzes — instantly.**
 
-## Project Overview (Task 1)
+A simple, exportable desktop app built with Flet that helps students process `.txt` or `.pdf` lecture notes.
 
-This is a Python GUI application designed to help students process and revise lecture/tutorial notes more effectively.
+- Extracts text + embedded images from PDFs  
+- Produces well-structured, exam-ready summaries with bold headings and bullet points  
+- Generates 6 high-quality practice questions that match the original style (calculation, sketch, short-answer, etc.) with full step-by-step answers  
 
-**Core purpose**:
-- Input and organize notes (lecture or tutorial) with metadata (course code, title, date)
-- Generate concise **extractive summaries** of the content
-- Automatically create basic **practice questions** (short answer, fill-in-the-blank, true/false, etc.)
-- Provide a simple graphical interface (Tkinter) for adding, viewing, and interacting with notes
+Fully local and shareable — anyone with Python can run it.
 
-The application solves a real-life problem: students often struggle with scattered notes, manual summarization, and creating self-test questions. This tool offers a structured, private, persistent alternative to pasting notes into external AI every time.
+---
 
-**Current status (pre-submission 8 March 2026)**:
-- Basic OOP structure implemented
-- Tkinter GUI with tabs for adding notes and placeholders for summarize/quiz
-- Persistence, summarization, and question generation stubs ready
-- Modular design across 6 .py files
+## 📥 Installation (PyCharm only)
 
-## OOP Concepts Demonstrated (Preliminary)
+No terminal commands needed.
 
-The project uses **all core OOP concepts** from the course:
+1. Open your project in **PyCharm**.  
+2. Go to **File → Settings → Project → Python Interpreter**.  
+3. Click the **+** button and install these packages **one by one**:
 
-- **Abstraction**: `NoteEntry` ABC in `models/note.py`
-- **Inheritance**: `LectureNote` and `TutorialNote` inherit from `NoteEntry`
-- **Encapsulation**: Protected attributes (`_course_code`, `_content`, etc.) + `@property` getters
-- **Polymorphism**: `get_type()` method overridden in subclasses
-- **Composition**: `StudyAssistantGUI` owns instances of `CourseRepository`, `Summarizer`, `QuestionGenerator`
-- **Modular programming**: Separated into models, storage, processing (summarizer + question generator), gui
+   - `flet`
+   - `pymupdf`
+   - `google-generativeai`
+   - `openai`
+   - `sumy`
+   - `rake-nltk`
+   - `nltk`
 
-Future additions will include dunder methods (`__str__`, `__repr__`), class/static methods, and operator overloading if needed.
+4. After installing `nltk`, run this **once** in the PyCharm console:
 
+   ```python
+   import nltk
+   nltk.download(['punkt', 'punkt_tab', 'stopwords'])
 
+🚀 How to Run
 
+Place these files in the same folder:
+main.py
+summarizer.py
+image_analyzer.py
+quiz_generator.py
+config.py
+
+Right-click main.py → Run 'main'.
+
+The app opens with a clean main menu offering Summarizer and Quiz Generator cards.
+
+📖 How to Use
+Step-by-step (works the same for both tools)
+
+Click Summarizer or Quiz Generator card.
+Click Upload File → select .txt or .pdf.
+The raw extracted text appears in the big box (you can edit it).
+
+Click Generate Summary or Generate Quiz (6 questions).
+Wait for the blue loading ring + message:“Generating… This may take a few minutes”
+Polished output appears below (formatted with headings, bullets, and clean spacing).
