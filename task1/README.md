@@ -8,13 +8,9 @@ A simple, exportable desktop app built with Flet that helps students process `.t
 - Produces well-structured, exam-ready summaries with bold headings and bullet points  
 - Generates 6 high-quality practice questions that match the original style (calculation, sketch, short-answer, etc.) with full step-by-step answers  
 
-Fully local and shareable — anyone with Python can run it.
 
----
 
-## 📥 Installation (PyCharm only)
-
-No terminal commands needed.
+## Module Installation (PyCharm method)
 
 1. Open your project in **PyCharm**.  
 2. Go to **File → Settings → Project → Python Interpreter**.  
@@ -34,26 +30,28 @@ No terminal commands needed.
    import nltk
    nltk.download(['punkt', 'punkt_tab', 'stopwords'])
 
-🚀 How to Run
+**Otherwise, go search on the internet to install the above packages to download
 
-Place these files in the same folder:
-main.py
-summarizer.py
-image_analyzer.py
-quiz_generator.py
-config.py
+
+## How to Run
+
+   Place these files in the same folder:
+   main.py
+   summarizer.py
+   image_analyzer.py
+   quiz_generator.py
+   config.py
 
 Right-click main.py → Run 'main'.
 
-The app opens with a clean main menu offering Summarizer and Quiz Generator cards.
+The app opens with a main menu for you to choosse between Summarizer or Quiz Generator .
 
-📖 How to Use
-Step-by-step (works the same for both tools)
+## How to generate output
 
-Click Summarizer or Quiz Generator card.
-Click Upload File → select .txt or .pdf.
-The raw extracted text appears in the big box (you can edit it).
+   1. Click on Summarizer or Quiz Generator
+   2. Click Upload File → select .txt or .pdf.
+   The raw extracted text appears in the big box (images will be summarized/described by LLM and fuse with the extracted text).
 
-Click Generate Summary or Generate Quiz (6 questions).
-Wait for the blue loading ring + message:“Generating… This may take a few minutes”
-Polished output appears below (formatted with headings, bullets, and clean spacing).
+2. Click Generate Summary or Generate Quiz (6 questions).
+   Wait for the process to be finished(might take a few minutes for the LLM to return the output)
+   output will appear below with formatted structure.
