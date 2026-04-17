@@ -1,6 +1,6 @@
 # Study Notes Processor
 
-**Transform messy lecture notes into clean summaries and practice quizzes — instantly.**
+**Turn lengthy lecture notes into clean summaries and practice quizzes**
 
 A simple, exportable desktop app built with Flet that helps students process `.txt` or `.pdf` lecture notes.
 
