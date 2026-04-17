@@ -42,12 +42,12 @@ then enter:
 
 ## How to Run
 
-   Place these files in the same folder:
+ `  Place these files in the same folder:
    main.py
    summarizer.py
    image_analyzer.py
    quiz_generator.py
-   config.py
+   config.py`
 
 Right-click main.py → Run 'main'.
 
