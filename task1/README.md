@@ -51,6 +51,8 @@ then enter:
 
 Right-click main.py → Run 'main'.
 
+*or directly execute the .exe file 
+
 The app opens with a main menu for you to choosse between Summarizer or Quiz Generator .
 
 ## How to generate output
