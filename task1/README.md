@@ -30,7 +30,8 @@ A simple, exportable desktop app built with Flet that helps students process `.t
    import nltk
    nltk.download(['punkt', 'punkt_tab', 'stopwords'])
 
-**Otherwise, go search on the internet to install the above packages to download
+**Alternatively enter this command in the terminal
+python -m pip install pymupdf google-generativeai openai sumy rake-nltk nltk
 
 
 ## How to Run
